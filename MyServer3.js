@@ -2,7 +2,7 @@
 const http = require("http");
 // Import the URL module
 const url = require("url");
-// Import Pathcls
+// Import FileSystem module
 const fs = require('fs');
 // Import Path module
 const path = require('path');
@@ -20,7 +20,7 @@ const requestListener = function (req, res) {
     }
     else if(reqUrl == "/nome") {
         res.writeHead(200);
-        res.write('<html>Meu nome é <strong>Cristian</strong>!</html>');
+        res.write('<html>Hi! My name is <strong>Cristian Zaparoli</strong>!</html>');
         res.end();
     } 
     else {
